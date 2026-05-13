@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Message</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, sans-serif;
+    }
+
+    body{
+        background:white;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .container{
+        width:90%;
+        max-width:350px;
+        text-align:center;
+    }
+
+    h1{
+        color:black;
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    input{
+        width:100%;
+        padding:16px;
+        border:2px solid #d9d9d9;
+        border-radius:18px;
+        outline:none;
+        font-size:16px;
+        margin-bottom:18px;
+        transition:0.3s;
+    }
+
+    input:focus{
+        border-color:#7b2cff;
+        box-shadow:0 0 10px rgba(123,44,255,0.2);
+    }
+
+    button{
+        width:100%;
+        padding:15px;
+        border:none;
+        border-radius:18px;
+        background:#7b2cff;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover{
+        opacity:0.9;
+    }
+
+    .message-box{
+        display:none;
+        margin-top:25px;
+        background:#7b2cff;
+        color:white;
+        padding:20px;
+        border-radius:22px;
+        font-size:17px;
+        line-height:1.5;
+        box-shadow:0 10px 25px rgba(123,44,255,0.25);
+        animation:fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+            transform:translateY(10px);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 id="title">Enter Secret Code</h1>
+
+    <input type="password" id="secretCode" placeholder="Enter code">
+
+    <button id="mainButton" onclick="checkCode()">
+        Enter Secret Code
+    </button>
+
+    <div class="message-box" id="messageBox">
+        Tu instagram id deactivate karat hotis tevha me Kay bolu mala samjhal nahi. Pan jevha paryant mala bolaych hot tevha paryant ushir jhala tu id deactivate kelis. Tya mule aata ya prakare bolat aahe.
+
+Aaj me driving classes la gelo nahi (may 13). 8 te 8:30am paryant point pashi thamblo hoto. Punha aryan chya ghara chya thod khaali thamblo 9am paryant. Pan tu aali nahis. Tya mule mala aata tujhi chinta hot aahe. Kashi aahes? Ghari kay jhal? Khup sare questions aahet pan aata vicharnya sathi ushir jhala.
+
+May 10 la Kay karu kay nahi kahi samjhat navhat.... Pan aata mala mahit aahe kay karayla pahije. Majhya side la tar aata sagal changal hot aahe. Me mg college la admission gheil pan mala kahi regret nahi. Me mehant karel college shuru jhalya pasun. Aata mala study karu vatat aahe pan majhya kade computer nahi study sathi. Computer sivay me sadhyala tar kahi karu shaknar nahi. Laptop hota te sell kele pappa ne april la. College shuru jhalya var ek computer genar aahe mang changli study karel. Majhi kalji karu nako. Me promise todnar nahi.
+
+Baki mala tujhi khup kalji hot aahe. Me try kelto bhakti la tujhya baddal vicharyla pan tin reply dili nahi.
+
+Me tujhya sivay rahu shaknar nahi future madhe. Me already tula wife maanlo aahe. Me give up karnar nahi aata. Aapan kahi naa kahi karun punha convince karuta tujhya parents la.
+
+Mala pan mahit hot aasal kahi tari hoil. Pan yevdhya lavkar hoil vichar kelo navhto. Me aata message karnar nahi. Jevha paryant sagal thik honar nahi tu pan karu nako.
+
+Mala fakt 3 te 4 years pahijet. Aata 12th jhali majhi, 3 year bca karel punha ek chhoti si job pan lagali tar karel. Starting la salary jast bhetli nahi tari kahi aadchan nahi. Punha experience nusar salary pan vadhate software engineer chi. Starting la jari 20-25k aasel tar chalel.
+
+Punha bca karun job laglya var me ghar changal bandhel. Bank madhe 7 lakh aahet. 3-4 lakh ch loan Gheun 10-11 lakh madhe aata jya gharat rahat aahe tyala changal banvel. Tujhi degree complete hoi paryant majh sagal hoil...
+
+Baki... First possibility: jar tujhe father 12th nantar marriage karaych mhanle, jabardasti karu lagle tar me majhya parents la sangel ki tujhya parents la convince kara. Kahi naa kahi tar upay nighel tu chinta karu nako.
+
+Second possibility: jar tula degree karu dile tar changal aahe. Ek tension kami hoil, aani mala swatalach prove karnya sathi time bhetel. Punha tujhi degree jhalya var pan khup aadchani yetil pan aapan kahi upay kadhuta, convince karuta.
+
+Me tujhya sobat majhi purni life imagine karun baslo aahe. Aata me maghi sarku shaknar nahi. Jevdha vel me tula miss karat aahe, mala samjhat aahe ki me kharach tula love kelo hoto. Kahi majak navhta. Aani mala mahit aahe tu pan timepass keli nahis.
+
+I genuinely love you. Please vichar kar tujh answer kay aahe. Tu jevha propose keli hotis tevha me swata baddal khup insecure hoto pan aata nahi. Tevha me 1 diwas khup vichar kelo kay karayla pahije, aani me majh answer dilo next day la. Tula jevdha vel pahije ghe mala kahi aadchan nahi. Me pratek Sunday 4pm te 5pm paryant maruti mandir madhe basel. Tujha wait karat. Jevha pan tu sure jhalis, Kontya pan Sunday la ye. Me wait karel.....
+
+Love you...
+    </div>
+
+</div>
+
+<script>
+
+let unlocked = false;
+
+function checkCode(){
+
+    const code = document.getElementById("secretCode").value;
+
+    if(code === "106"){
+
+        unlocked = true;
+
+        document.getElementById("title").innerText = "Unlocked";
+
+        document.getElementById("mainButton").innerText = "See Message";
+
+        document.getElementById("secretCode").style.display = "none";
+
+        document.getElementById("mainButton").onclick = showMessage;
+
+    }
+
+    else{
+        alert("Wrong Secret Code");
+    }
+}
+
+function showMessage(){
+    if(unlocked){
+        document.getElementById("messageBox").style.display = "block";
+    }
+}
+
+</script>
+
+</body>
+</html>
